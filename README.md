@@ -44,7 +44,7 @@ Follow these simple steps to spin up the project locally:
 
 ```bash
 # 1. Clone the repository
-git clone <repository-url>
+git clone https://github.com/BaranTascii/E-Pharmacy-Frontend
 
 # 2. Navigate to the project folder and install dependencies
 npm install
