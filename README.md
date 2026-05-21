@@ -1,16 +1,53 @@
-# React + Vite
+# Admin Dashboard - Frontend Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the frontend application for the Admin Dashboard, designed to provide a comprehensive and intuitive interface for managing and visualizing data related to a medical store's operations. It consumes data from a separate backend API to display income, expenses, product information, customer details, and supplier data.
 
-Currently, two official plugins are available:
+## Demo Credentials
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+To log in and explore the dashboard features, please use the following pre-configured admin vendor account:
 
-## React Compiler
+* **Email Address:** `vendor@gmail.com`
+* **Password:** `1234567`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project consists of the following dedicated pages and modules:
+
+* **Log in:** Allows authorized users to securely authenticate and access the dashboard using their credentials.
+* **Dashboard:** Highlights high-level business metrics including total products, suppliers, customers, recent customer sign-ups, and a financial breakdown of income and expenses.
+* **All Orders:** Displays an organized, filterable list of all orders processed within the medical store.
+* **All Products:** Features a robust product management view with functionality to view the complete inventory, add new products, and edit existing product records.
+* **All Suppliers:** Provides a dedicated vendor directory with complete capabilities to add new supplier profiles and update supplier contact/business details.
+* **All Customers:** Displays a comprehensive list of registered customers for CRM and order tracking.
+
+### Additional Highlights
+* **Authentication Flow:** Complete user authorization support (secure session login and logout features).
+* **Responsive Design:** Fully optimized layout adapting seamlessly across mobile, tablet, and desktop viewports.
+
+## Technologies Used
+
+* **React** — Component-based UI rendering
+* **Redux** — Centralized client-side state management
+* **React Router** — Declarative single-page application (SPA) routing
+* **React Hook Form** — Performance-optimized, flexible form validation
+* **MUI X** — Advanced UI components and data grids for data-heavy views
+* **CSS Modules** — Locally-scoped component styling to prevent global leaks
+* **Vite** — Next-generation ultra-fast frontend tooling and bundling
+* **Axios** — Promise-based HTTP client for seamless backend API integration
+* **REST API** — Architectural standard for data communication
+
+## Installation and Startup
+
+Follow these simple steps to spin up the project locally:
+
+```bash
+# 1. Clone the repository
+git clone <repository-url>
+
+# 2. Navigate to the project folder and install dependencies
+npm install
+
+# 3. Start the local development server
+npm run dev
