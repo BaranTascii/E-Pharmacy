@@ -2,7 +2,7 @@ import axios from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const pharmacyApi = axios.create({
-  baseURL: "https://admin-dashboard-backend-t6zq.onrender.com",
+  baseURL: "https://e-pharmacy-backend-yr4f.onrender.com",
 });
 
 const setAuthHeader = token => {
