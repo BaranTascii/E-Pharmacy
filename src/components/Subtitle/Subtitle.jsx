@@ -15,7 +15,7 @@ const Subtitle = () => {
         {dashboard || allOrders || allProducts || allSuppliers || allCustomers}
       </p>
       <p className={s.subtitle}>|</p>
-      <p className={s.subtitle}>vendor@gmail.com</p>
+      <p className={s.subtitle}>admin@gmail.com</p>
     </div>
   );
 };
