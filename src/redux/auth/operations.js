@@ -5,7 +5,7 @@ export const pharmacyApi = axios.create({
   baseURL: "https://admin-dashboard-backend-t6zq.onrender.com",
 });
 
-const setAuthHeader = (token) => {
+const setAuthHeader = token => {
   pharmacyApi.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
 const clearAuthHeader = () => {
@@ -24,7 +24,7 @@ export const logIn = createAsyncThunk(
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
     }
-  },
+  }
 );
 
 export const logOut = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
@@ -50,7 +50,7 @@ export const refreshUser = createAsyncThunk(
       const { data } = await pharmacyApi.post(
         "/api/user/refresh",
         {},
-        { withCredentials: true },
+        { withCredentials: true }
       );
 
       const newToken = data.data.accessToken;
@@ -72,7 +72,7 @@ export const refreshUser = createAsyncThunk(
 
       return false;
     },
-  },
+  }
 );
 
 export const getUserInfo = createAsyncThunk(
@@ -89,7 +89,7 @@ export const getUserInfo = createAsyncThunk(
       const { data } = pharmacyApi.get(
         "/api/user/user-info",
         {},
-        { withCredentials: true },
+        { withCredentials: true }
       );
       return data;
     } catch (e) {
@@ -105,5 +105,5 @@ export const getUserInfo = createAsyncThunk(
 
       return false;
     },
-  },
+  }
 );

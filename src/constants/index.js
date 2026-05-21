@@ -1,37 +1,18 @@
-export const products = [
-  {
-    id: 1,
-    name: "Paracetamol",
-    category: "Medicine",
-    stock: 120,
-    price: 12,
-  },
-  {
-    id: 2,
-    name: "Vitamin C",
-    category: "Vitamins",
-    stock: 80,
-    price: 18,
-  },
-  {
-    id: 3,
-    name: "Ibuprofen",
-    category: "Medicine",
-    stock: 56,
-    price: 24,
-  },
-  {
-    id: 4,
-    name: "Aspirin",
-    category: "Medicine",
-    stock: 42,
-    price: 15,
-  },
-  {
-    id: 5,
-    name: "Omega 3",
-    category: "Supplements",
-    stock: 31,
-    price: 29,
-  },
+export const categoryList = [
+  { label: "Medicine", value: "Medicine" },
+  { label: "Head", value: "Head" },
+  { label: "Heart", value: "Heart" },
+  { label: "Hand", value: "Hand" },
+  { label: "Leg", value: "Leg" },
+  { label: "Dental Care", value: "Dental Care" },
+  { label: "Skin Care", value: "Skin Care" },
+  { label: "Eye Care", value: "Eye Care" },
+  { label: "Vitamins & Supplements", value: "Vitamins & Supplements" },
+  { label: "Orthopedic Products", value: "Orthopedic Products" },
+  { label: "Baby Care", value: "Baby Care" },
+];
+
+export const statusList = [
+  { label: "Active", value: "Active" },
+  { label: "Deactive", value: "Deactive" },
 ];
