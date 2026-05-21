@@ -6,7 +6,7 @@ This repository contains the frontend application for the Admin Dashboard, desig
 
 To log in and explore the dashboard features, please use the following pre-configured admin vendor account:
 
-* **Email Address:** `vendor@gmail.com`
+* **Email Address:** `admin@gmail.com`
 * **Password:** `1234567`
 
 ---
